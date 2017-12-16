@@ -1,17 +1,17 @@
 # site settings
-title: Massively
-subtitle: by HTML5 UP
-email: youremailaddress@gmail.com
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+title: Crypto Tips and Musts
+subtitle: by Harry Eldridge and Brendan Doyle
+email: bjd54@georgetown.edu
+description: An android developer's guide to not making common cryptographic mistakes.
 baseurl: "/cryptoTips" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 author:
-street_address: 1234 Somewhere Road
-city: Nashville
+street_address: Georgetown University
+city: Washington D.C.
 state: TN
-zip_code: 55555
+zip_code: 20007
 country: United States of America
-phone: (716) 555-5555
+phone: (410) 829-9908
 
 # social settings
 500px_url:
