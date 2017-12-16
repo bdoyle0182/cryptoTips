@@ -27,7 +27,8 @@ Things to remember:
  * Make sure you use **SecureRandom** correctly (See our page on [**randomness**](SecureRandom.html))
 * **Never** hard code your encryption keys, use the built in methods for generating keys instead. 
 
-<a href="javascript:toggletext('mytext')"> <b>Whfy?</b> </a> <div id="mytext" style="display: none;">In **ECB** mode, identical blocks of the message get encrypted to identical blocks of cipher-text. This means adversarial actors gain some amount of information about the message. Other modes (like **CBC**) don't reveal **any** information about the message, so it is must safer to just use those.</div> 
+<a href="javascript:toggletext('mytext')"> <b> Why? </b></a> 
+<div id="mytext" style="display: none;">In **ECB** mode, identical blocks of the message get encrypted to identical blocks of cipher-text. This means adversarial actors gain some amount of information about the message. Other modes (like **CBC**) don't reveal **any** information about the message, so it is must safer to just use those.</div> 
 
 **Example:**
 
