@@ -5,14 +5,12 @@ description: Everything on how to correctly use the Cipher API
 ---
 
 
-[TESTTTTddddd](References.html)
-
 Things to remember: 
 * The current standard for ciphers is **AES**, so unless you've done enough research to determine that a different cipher is going to be better for your application, that is what we suggest using. 
  * When in doubt, stick with **AES**. Java supports many block ciphers, some of which (like **DES**) are **not** secure. 
 * **Never** use **ECB** mode. Watch out! This is the default mode when using **AES**. 
 * **Never** use the same IV (initialization vector) for each encryption. Use a new **random** IV each time. We will present an example of using a random IV with **CBC** mode. 
- * Make sure you use **SecureRandom** correctly (See the **SecureRandom** tab)
+ * Make sure you use **SecureRandom** correctly (See our page on [**randomness**](SecureRandom.html))
 * **Never** hard code your encryption keys, use the built in methods for generating keys instead. 
 
 **Example:**
