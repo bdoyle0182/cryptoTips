@@ -4,7 +4,7 @@ title: Randomness
 description: How to avoid security holes with bad use of SecureRandom
 ---
 
-**When generatingaaa Randomness**
+**When generating Randomness**
 
 If your randomness is being used in any context related to information you want to be kept private or secure, **never** use a regular random number generator, and **always** use **SecureRandom** to guarentee security. 
 
