@@ -4,6 +4,20 @@ title: Passwords
 description: How to correctly and safely store user passwords, or derive keys from them
 ---
 
+<script language="JavaScript">
+function toggletext(cid)
+{
+ if ( document.getElementById(cid).style.display == "none" )
+ {
+   document.getElementById(cid).style.display = "block";
+ }
+ else
+ {
+   document.getElementById(cid).style.display = "none";
+ };
+}
+</script>
+
 **When Hashing Passwords**
 
 Things to remember: 
