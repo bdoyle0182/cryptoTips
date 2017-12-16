@@ -8,13 +8,13 @@ description: How to correctly and safely store user passwords
 
 Things to remember: 
 
-* Always use PBKDF2, **NOT** PBKDF1
-* Always use at least 1000 iterations in the key derivation algorithm
-* Always use a random salt
+* **Always** use PBKDF2, **NOT** PBKDF1
+* **Always** use at least 1000 iterations in the key derivation algorithm
+* **Always** use a random salt
   * Make sure the salt is at least 64 bits
-  * Make sure that you use SecureRandom correctly (link to SecureRandom section)
+  * Make sure that you use **SecureRandom** correctly (See the **Secure Random** tab)
   
-  **Example**
+  **Example:**
 
 
 ```java
