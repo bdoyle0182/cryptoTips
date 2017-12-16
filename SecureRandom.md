@@ -6,7 +6,7 @@ description: How to avoid security holes with bad use of SecureRandom
 
 **When using SecureRandom()**
 
-The main key when using SecureRandom is to never use static seeds. SecureRandom seeds itself when initialized using good randomness, so, unless you really need to have a seed, it is safe to just initialize it without one. 
+The main thing to remember when using SecureRandom is to **never** use static seeds. SecureRandom randomly seeds itself when initialized, so, unless you really need to have a seed, it is safe to just initialize it without one. 
 
 A **BAD** Example: 
 ```java
