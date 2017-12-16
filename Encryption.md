@@ -51,4 +51,4 @@ byte[] ciphertext = cipher.doFinal(plaintext);
 
 ```
 
-Advanced Note: While **CBC** mode is the most common, **CTR** is just as secure, and has the nice property of being pre-computable! Consider using **CTR** in place of **CBC**. Make sure you do good research before so you can implement everything correctly, and make sure you use a **random** IV!
+**Advanced Note**: While **CBC** mode is the most common, **CTR** is just as secure, and has the nice property of being pre-computable! Consider using **CTR** in place of **CBC**. Make sure you do good research before so you can implement everything correctly, and make sure you use a **random** IV!
