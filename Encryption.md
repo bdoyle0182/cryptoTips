@@ -28,7 +28,7 @@ Things to remember:
 * **Never** hard code your encryption keys, use the built in methods for generating keys instead. 
 
 <a href="javascript:toggletext('mytext')"> <b> Why? </b></a> 
-<div id="mytext" style="display: none;">In **ECB** mode, identical blocks of the message get encrypted to identical blocks of cipher-text. This means adversarial actors gain some amount of information about the message. Other modes (like **CBC**) don't reveal **any** information about the message, so it is must safer to just use those.</div> 
+<div id="mytext" style="display: none;">In <b>ECB</b> mode, identical blocks of the message get encrypted to identical blocks of cipher-text. This means adversarial actors gain some amount of information about the message. Other modes (like <b>CBC</b>) don't reveal <b>any</b> information about the message, so it is must safer to just use those.</div> 
 
 **Example:**
 
