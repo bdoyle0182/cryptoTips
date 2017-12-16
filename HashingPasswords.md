@@ -1,5 +1,5 @@
 ---
 layout: page
-title: Hashing Passwords
+title: Passwords
 description: How to correctly and safely store user passwords
 ---
