@@ -28,7 +28,14 @@ Things to remember:
 * **Never** hard code your encryption keys, use the built in methods for generating keys instead. 
 
 <a href="javascript:toggletext('mytext')"> <b> Why? </b></a> 
-<div id="mytext" style="display: none;">In <b>ECB</b> mode, identical blocks of the message get encrypted to identical blocks of cipher-text. This means adversarial actors gain some amount of information about the message. Other modes (like <b>CBC</b>) don't reveal <b>any</b> information about the message, so it is must safer to just use those.</div> 
+<div id="mytext" style="display: none;">In <b>ECB</b> mode, identical blocks of the message get encrypted to identical blocks of cipher-text. This means adversarial actors gain some amount of information about the message. Other modes (like <b>CBC</b>) don't reveal <b>any</b> information about the message, so it is must safer to just use those.
+
+The need for random IVs comes from the same place. Without a new random IV for each encryption, if the same message gets sent it will be encrypted to the same thign. 
+
+<b> SecureRandom </b> is a random number generator built specifically for cryptographic applications. Standard RNGs have the potential to be abued. 
+
+If your encryption key is hardcoded into your program anyone can access it! Anything encrypted with it isn't secure at all!
+</div> 
 
 **Example:**
 
