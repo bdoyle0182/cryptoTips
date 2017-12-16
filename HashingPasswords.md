@@ -31,7 +31,15 @@ Things to remember:
   
   
 <a href="javascript:toggletext('mytext')"> <b> Why? </b></a> 
-<div id="mytext" style="display: none;"> hello
+<div id="mytext" style="display: none;"> 
+
+<p> Using established standards is nearly always bettern than implementing something yourself. Be safe and use existing implementations! </p>
+
+<p>PBKDF1 was designed for much smaller key lengths than are used in modern times, so should generally be avoided. </p>
+
+<p>1000 iterations is the minimum value suggested for the current password based encryption standard. </p>
+
+<p> Using a constant salt opens you up to attacks using pre-computation. Essentially, a constant salt is equivalent to no salt at all. </p>
 </div> 
   
   
