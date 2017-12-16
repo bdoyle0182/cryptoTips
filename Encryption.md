@@ -23,6 +23,9 @@ Blahblahblah
 <div id="mytext" style="display: none;">
 hidden text</div>
 
+<a href="javascript:toggletext('mytext')">Click here to toggle hidden text2</a>
+<div id="mytext" style="display: none;"> hidden asdfasdftext</div>
+
 
 Things to remember: 
 * The current standard for ciphers is **AES**, so unless you've done enough research to determine that a different cipher is going to be better for your application, that is what we suggest using. 
