@@ -52,3 +52,5 @@ byte[] ciphertext = cipher.doFinal(plaintext);
 ```
 
 **Advanced Note**: While **CBC** mode is the most common, **CTR** is just as secure, and has the nice property of being pre-computable! Consider using **CTR** in place of **CBC**. Make sure you do good research before so you can implement everything correctly, and make sure you use a **random** IV!
+
+**Advanced Note**: A random IV is not required if the first block of a message is filled with random data and discarded during decryption. While IVs are a good practice in general, the first block randomness construction may be better for your implementation. Make sure you've done enough research before you attempt to implement a protocol this way!
