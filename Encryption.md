@@ -4,6 +4,25 @@ title: Encryption
 description: Everything on how to correctly use the Cipher API
 ---
 
+<script language="JavaScript">
+function toggletext(cid)
+{
+ if ( document.getElementById(cid).style.display == "none" )
+ {
+   document.getElementById(cid).style.display = "block";
+ }
+ else
+ {
+   document.getElementById(cid).style.display = "none";
+ };
+}
+</script>
+
+Blahblahblah
+<a href="javascript:toggletext('mytext')">Click here to toggle hidden text</a>
+<div id="mytext" style="display: none;">
+hidden text</div>
+
 
 Things to remember: 
 * The current standard for ciphers is **AES**, so unless you've done enough research to determine that a different cipher is going to be better for your application, that is what we suggest using. 
