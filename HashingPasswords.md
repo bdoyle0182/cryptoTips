@@ -4,7 +4,7 @@ title: Passwords
 description: How to correctly and safely store user passwords
 ---
 
-**When Hasing Passwords**
+**When Hashing Passwords**
 
 Things to remember: 
 
