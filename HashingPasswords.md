@@ -8,6 +8,7 @@ description: How to correctly and safely store user passwords, or derive keys fr
 
 Things to remember: 
 
+* **Never** just hash the password with an existing hash function. **Always** use an existing password-based encryption scheme. 
 * **Always** use PBKDF2, **NOT** PBKDF1
 * **Always** use at least 1000 iterations in the key derivation algorithm
 * **Always** use a random salt
