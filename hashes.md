@@ -13,3 +13,5 @@ The main thing to remember is that some commonly used hash functions are actuall
 
 Other common hash functions, like SHA3 or SHA256, are safe
 
+Be careful when **truncating**! For most standard hash functions a reasonable amount of truncation is safe. Be wary though, the more you truncate your hash, the weaker your protocol becomes. So, truncate if you must, but keep it within reason. 
+
