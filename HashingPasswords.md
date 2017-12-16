@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Passwords
-description: How to correctly and safely store user passwords
+description: How to correctly and safely store user passwords, or derive keys from them
 ---
 
 **When Hashing Passwords**
