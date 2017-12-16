@@ -4,9 +4,7 @@ title: Encryption
 description: Everything on how to correctly use the Cipher API
 ---
 
-## Our Encryption Guide:
 
-**When using Ciphers (i.e. anything to do with the Cipher API)**
 
 Things to remember: 
 * The current standard for ciphers is AES, so unless you've done enough research to determine that a different cipher is going to be better for your application, that is what we suggest using. 
