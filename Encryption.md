@@ -7,12 +7,12 @@ description: Everything on how to correctly use the Cipher API
 
 
 Things to remember: 
-* The current standard for ciphers is AES, so unless you've done enough research to determine that a different cipher is going to be better for your application, that is what we suggest using. 
- * When in doubt, stick with AES. Java supports many block ciphers, some of which (like DES) are **not** secure. 
-* Never use ECB mode. Watch out! This is the default mode when using AES. 
-* Never use the same IV (initialization vector) for each encryption. Use a new random IV each time. We will present an example of using a random IV with CBC mode. 
- * Make sure you use SecureRandom correctly (link to secure random section)
-* Don't hard code your encryption keys, use the built in methods for generating keys instead. 
+* The current standard for ciphers is **AES**, so unless you've done enough research to determine that a different cipher is going to be better for your application, that is what we suggest using. 
+ * When in doubt, stick with **AES**. Java supports many block ciphers, some of which (like **DES**) are **not** secure. 
+* **Never** use **ECB** mode. Watch out! This is the default mode when using **AES**. 
+* **Never** use the same IV (initialization vector) for each encryption. Use a new **random** IV each time. We will present an example of using a random IV with **CBC** mode. 
+ * Make sure you use **SecureRandom** correctly (See the **SecureRandom** tab)
+* **Never** hard code your encryption keys, use the built in methods for generating keys instead. 
 
 **Example:**
 
@@ -51,4 +51,4 @@ byte[] ciphertext = cipher.doFinal(plaintext);
 
 ```
 
-Advanced Note: While CBC mode is the most common, CTR is just as secure, and has the nice property of being precomputable! Consider using CTR in place of CBC. Make sure you do good research before to make sure you implement everything correctly, and make sure you use a random IV!
+Advanced Note: While **CBC** mode is the most common, **CTR** is just as secure, and has the nice property of being pre-computable! Consider using **CTR** in place of **CBC**. Make sure you do good research before so you can implement everything correctly, and make sure you use a **random** IV!
