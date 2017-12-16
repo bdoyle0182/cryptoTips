@@ -29,6 +29,12 @@ Things to remember:
   * Make sure the salt is at least 64 bits
   * Make sure that you use **SecureRandom** correctly (See our page on [**randomness**](SecureRandom.html))
   
+  
+<a href="javascript:toggletext('mytext')"> <b> Why? </b></a> 
+<div id="mytext" style="display: none;"> hello
+</div> 
+  
+  
   **Example:**
 
 
