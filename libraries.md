@@ -1,11 +1,9 @@
 ---
 layout: page
-title: Libraries
-description: Some common libraries are insecure. This page outlines which ones and why
+title: References
+description: Our Source Matterial
 ---
 
-**AdMob**: Uses a constant encryption key. **Avoid**. 
+This site is based on the work of Egele, Brumley, Fratantonio, and Kruegel in their paper *An Empirical Study of Cryptographic Misuse in Android Applications*.
 
-**ScoreLoop**: Uses constant IVs. **Avoid**
-
-**Android License Verification Library**: Usesconstant IVs. **Avoid**
+The paper can be found [here](https://www.cs.ucsb.edu/~chris/research/doc/ccs13_cryptolint.pdf "CRYPTOLINT")
