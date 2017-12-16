@@ -13,7 +13,7 @@ Things to remember:
 * **Always** use at least 1000 iterations in the key derivation algorithm
 * **Always** use a random salt
   * Make sure the salt is at least 64 bits
-  * Make sure that you use **SecureRandom** correctly (See the **Secure Random** tab)
+  * Make sure that you use **SecureRandom** correctly (See our page on [**randomness**](SecureRandom.html))
   
   **Example:**
 
