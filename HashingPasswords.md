@@ -31,6 +31,17 @@ Things to remember:
   
   
 <a href="javascript:toggletext('mytext')"> <b> Why? </b></a> 
+
+It's important to keep a user's data private. This is important for trust by the user in the company/software you've created to protect their data.
+If you do not hash passwords, and your passord table is hacked; then your entire userbase or users in the file have just had their passwords stolen
+in the clear. If you hash their passwords, that at least adds at least a layer of protection. However, it is still not enough because there are dictionary
+attacks out there such as CrackStation, which are estimated to have 50% of all human generated passwords in its dictionary. So adding a salt is therefore
+incredibly important to reduce vunlerability. By adding a salt, you prevent the hacker from being able to preprocess their dictionary into a table of password
+and hashes because the salts are used in the hash to verify a user's password in your application. This adds several orders of magnitude in difficulty to 
+the attack. Unfortunately public salts are also hackable so having a one time private salt with a small key space that is not stored is important too. By 
+doing this, you are adding up to the size of the private salt key space hashes in order to verify a user. But for each user, this will only be around a 
+hundredth of a second in computation time. When doing this with a dictionary of a billion passwords, this adds a decent amount of time to their attack.
+Finally, its important to use a password based key derivation function (PBKDF2) rather than just plain SHA256 in order to protect weak passwords by slowing down the hash process, which will again slow down the hacker's attack. 
 <div id="mytext" style="display: none;"> 
 
 <p> Using established standards is nearly always bettern than implementing something yourself. Be safe and use existing implementations! </p>
