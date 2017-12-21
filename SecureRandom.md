@@ -4,6 +4,21 @@ title: Hashes
 description: How to avoid using insecure hash functions
 ---
 
+<script language="JavaScript">
+function toggletext(cid)
+{
+ if ( document.getElementById(cid).style.display == "none" )
+ {
+   document.getElementById(cid).style.display = "block";
+ }
+ else
+ {
+   document.getElementById(cid).style.display = "none";
+ };
+}
+</script>
+
+
 **When Using Hash Functions**
 
 The main thing to remember is that some commonly used hash functions are actually **not secure**. The ones to avoid are:
