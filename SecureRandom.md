@@ -33,6 +33,6 @@ Be careful when **truncating**! For most standard hash functions a reasonable am
 <a href="javascript:toggletext('mytext')"> <b> Why? </b></a> 
 
 <div id="mytext" style="display: none;"> Modern GPU's can compute millions of MD5 and SHA1 hashes every second. Whereas SHA256 can only compute tens of thousands hashes every second based on current 
-GPU's. There's several other reasons you should be using SHA256 like SHA1's smaller key space adding to it's vulnerability. The fact that a hacker could rent a GPU cluster on AWS for a couple bucks to crack passwords hashed with SHA1 should be reason enough not to use it.
+GPU's. There are several other reasons you should be using SHA256 like SHA1's smaller key space adding to it's vulnerability. The fact that a hacker could rent a GPU cluster on AWS for a couple bucks to crack passwords hashed with SHA1 should be reason enough not to use it.
 
 </div>
