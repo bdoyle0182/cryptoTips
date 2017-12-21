@@ -32,6 +32,17 @@ Things to remember:
   
 <a href="javascript:toggletext('mytext')"> <b> Why? </b></a> 
 
+<div id="mytext" style="display: none;"> 
+
+<p> Using established standards is nearly always bettern than implementing something yourself. Be safe and use existing implementations! </p>
+ 
+ <p>PBKDF1 was designed for much smaller key lengths than are used in modern times, so should generally be avoided. </p>
+ 
+ <p>1000 iterations is the minimum value suggested for the current password based encryption standard. </p>
+ 
+ <p> Using a constant salt opens you up to attacks using pre-computation. Essentially, a constant salt is equivalent to no salt at all. </p>
+ </div> 
+
 It's important to keep a user's data private. This is important for trust by the user in the company/software you've created to protect their data.
 If you do not hash passwords, and your passord table is hacked; then your entire userbase or users in the file have just had their passwords stolen
 in the clear. If you hash their passwords, that at least adds at least a layer of protection. However, it is still not enough because there are dictionary
