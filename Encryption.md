@@ -32,7 +32,7 @@ Things to remember:
 
 <p>The need for random IVs comes from the same place. Without a new random IV for each encryption, if the same message gets sent it will be encrypted to the same thing.</p>
 
-<p><b> SecureRandom </b> is a random number generator built specifically for cryptographic applications. Standard RNGs have the potential to be abued. </p>
+<p><b> SecureRandom </b> is a random number generator built specifically for cryptographic applications. Standard RNGs have the potential to be abused. </p>
 
 <p>If your encryption key is hardcoded into your program anyone can access it! Anything encrypted with it isn't secure at all!</p>
 </div> 
